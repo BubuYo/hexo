@@ -134,8 +134,8 @@ hash码很长，通常6-7位就够了
 远程仓库的版本很新，但是你还是想用老版本覆盖
 {% codeblock %}
 $ git push origin master --force
-{% endcodeblock %}
 # 或者 git push -f origin master
+{% endcodeblock %}
 觉得commit太多了？多个commit合并为1个
 {% codeblock %}
 $ git rebase -i HEAD~4
@@ -144,8 +144,8 @@ $ git rebase -i HEAD~4
 想回退到某一个版本
 {% codeblock %}
 $ git reset --hard <hash>
-{% endcodeblock %}
 # 例如 git reset --hard a3hd73r
+{% endcodeblock %}
 --hard代表丢弃工作区的修改，让工作区与版本代码一模一样，与之对应，--soft参数代表保留工作区的修改。
 想回退到上一个版本，有没有简便方法？
 {% codeblock %}
