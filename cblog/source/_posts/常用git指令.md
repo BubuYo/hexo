@@ -3,9 +3,6 @@ title: 常用git指令
 date: 2017-09-14 14:25:20
 tags: git
 ---
-# 99%的时间在使用的Git命令
-Git是目前最流行的分布式版本控制系统，它是Linus献给软件行业的两件礼物之一，另外一件礼物是目前最大的服务器系统软件Linux。
-
 # 基本命令
 Git是一个非常强大的工具，各种命令组合上千种。不过，我们90%的时间估计都在用这4条命令。
 {% codeblock %}
@@ -47,7 +44,7 @@ $ git clone <git-repo-url>
 {% codeblock %}
 $ git remote set-url origin <your-git-url>
 {% endcodeblock %}
-切换分支
+# 切换分支
 新建仓库后，默认生成了master分支
 如果你想新建分支并切换
 {% codeblock %}
@@ -94,7 +91,7 @@ $ git stash # 工作区修改暂存
 $ git pull  # 更新分支
 $ git stash pop # 暂存修改恢复到工作区
 {% endcodeblock %}
-撤销操作
+# 撤销操作
 恢复暂存区文件到工作区
 {% codeblock %}
 $ git checkout <file-name>
@@ -117,7 +114,7 @@ $ git reset --hard <file-name>
 $ git revert <commit-hash>
 {% endcodeblock %}
 实质是新建了一个与原来完全相反的commit，抵消了原来commit的效果
-版本回退与前进
+# 版本回退与前进
 查看历史版本
 {% codeblock %}
 $ git log
