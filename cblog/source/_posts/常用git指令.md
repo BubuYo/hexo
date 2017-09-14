@@ -28,7 +28,6 @@ $ git remote add <name> <git-repo-url>
 $ git remote add <name> <another-git-repo-url>
 # 例如 git remote add coding https://coding.net/xxxxxx
 {% endcodeblock %}
-是远程仓库的名称，通常为 origin
 忘了关联了哪些仓库或者地址
 {% codeblock %}
 $ blog-react git:(master) git remote -v
